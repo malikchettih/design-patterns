@@ -21,6 +21,12 @@ receivers. The chain can be composed dynamically at runtime with any handler tha
 - ConcreteHandler for each implementation
 - Each Handler has a reference to the next Handler, ConcreteHandler
 
+## Summary 
+- Decouples sender and receiver
+- Runtime configuration
+- Hierarchical in nature
+- Careful with large chains
+
 ## Usage in JDK
 - javax.servlet.Filter#doFilter()
 - java.util.logging.Logger#log()
